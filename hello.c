@@ -473,7 +473,7 @@ void spa(int a,int b,int *sum,int *product,int *average){
     *average = a+b/2;
 }
 int main(){
-    int a = 3,b = 5;
+    int a = 4,b = 2345;
     int sum,product,average;
     spa(a,b,&sum,&product,&average);
     printf("sum = %d & product = %d & average = %d",sum ,product,average);
