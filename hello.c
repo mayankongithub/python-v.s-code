@@ -465,7 +465,7 @@ int main(){
     swap(&a,&b);
     printf("a = %d & b = %d",a,b);
     return 0;
-}*/
+}
 #include<stdio.h>
 void spa(int a,int b,int *sum,int *product,int *average){
     *sum = a+b;
@@ -473,10 +473,43 @@ void spa(int a,int b,int *sum,int *product,int *average){
     *average = a+b/2;
 }
 int main(){
-    int a = 4,b = 2345;
+    int a = 4,b = 5;
     int sum,product,average;
     spa(a,b,&sum,&product,&average);
     printf("sum = %d & product = %d & average = %d",sum ,product,average);
     return 0;
 }
+#include<stdio.h>
+int main(){
+    int n = 153;
+    int x = n;
+    int l,sum=0;
+    while (n>0){
+        l = n%10;
+        sum = sum + l*l*l;
+        n = n/10;
+    }
+    if (x==sum){
+        printf("true");
+    }
+    else{
+        printf("false");
+    }
+}*/
+#include<stdio.h>
+int main(){
+    char a [100];
+    char b [100];
+    printf("enter a statment a : ");
+    //scanf("%[^\n]*c",&a);
 
+    //scanf("%[^\n]*c",&b);
+   // printf("%s\n",a);
+    //printf("%s",b);
+    fgets(a,100,stdin);
+    printf("%s\n",a);
+    printf("enter a statment b : ");
+    fgets(b,100,stdin);
+    printf("%s\n",b);
+    return 0;
+}
