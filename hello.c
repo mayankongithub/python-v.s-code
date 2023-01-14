@@ -495,7 +495,7 @@ int main(){
     else{
         printf("false");
     }
-}*/
+}
 #include<stdio.h>
 int main(){
     char a [100];
@@ -513,3 +513,118 @@ int main(){
     printf("%s\n",b);
     return 0;
 }
+#include<stdio.h>
+int main(){
+    int marks[3];
+    printf("Enter a marks for physics : ");
+    scanf("%d",&marks[0]);
+    printf("Enter a marks for chemistry : ");
+    scanf("%d",&marks[1]);
+    printf("Enter a marks for maths : ");
+    scanf("%d",&marks[2]);
+    printf("physics = %d & chemistry = %d & maths = %d\n",marks[0],marks[1],marks[2]);
+    int result = (marks[0] + marks[1] + marks[2])*0.4;
+    printf("%d",result);
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int a = 8;
+    int b = 0;
+    if (a>b){
+        printf("a is greater then b");
+    }
+    else{
+        printf("b is grater then a");
+    }
+}
+#include<stdio.h>
+int main(){
+    int arr[5];
+    int *ptr = arr;
+    for (int i = 0;i<5;i++){
+        printf("%d index = ",i);
+        scanf("%d",&arr[i]);    
+    }
+    //output
+    for (int i=0;i<5;i++){
+        printf("%d index = %d\n",i,arr[i]);
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[4];
+    int *ptr = arr;
+    for (int i=0;i<5;i++){
+        printf("%d index = ",i);
+        scanf("%d",&arr[i]);
+    }
+    //output
+    for(int i=0;i<5;i++){
+        printf("%d index = %d\n",i,arr[i]);
+    }
+    return 0;
+}
+#include<stdio.h>
+void printnumber(int arr[],int n){
+    for (int i=0;i<n;i++){
+        printf("%d\t",arr[i]);
+    }
+}
+int main(){
+    int arr[] = {2,3,4,5,6};
+
+    printnumber(arr,5);
+    return 0;
+}
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int a,b; 
+    char op ;
+    printf("Enter a operator : ");
+    scanf("%c",&op);
+    printf("Enter a: ");
+    scanf("%d",&a);
+    printf("Enter b: ");
+    scanf("%d",&b);
+    
+    switch(op){
+        case '+' : printf("%d",a + b);
+                   break;
+        case '-' : printf("%d",a - b);
+                   break;
+        case '*' : printf("%d",a * b);
+                   break;
+        case '/' : printf("%d",a/b);
+                   break;
+        case '%' : printf("%d",a%b);
+                   break;
+        case '^' : printf("%d",a*a);
+                   break;
+        default :  printf("enter a valid operator");
+    }
+}
+#include<stdio.h>
+int main(){
+    int arr[4];
+    int n = 4;
+    int *ptr = arr;
+    for(int i=0;i<n;i++){
+        printf("index  %d =",i);
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<n;i++){
+        printf("index  %d = %d\n",i,arr[i]);
+    }
+
+}*/
+#include<stdio.h>
+int main(){
+    int arr[5] = {1,2,3,4,5};
+    for(int i=0;i<5;i++){
+        printf("%d\t",arr[i]);
+    }
+}
+
