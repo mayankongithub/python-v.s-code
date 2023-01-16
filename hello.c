@@ -619,12 +619,272 @@ int main(){
         printf("index  %d = %d\n",i,arr[i]);
     }
 
-}*/
+}
 #include<stdio.h>
 int main(){
     int arr[5] = {1,2,3,4,5};
     for(int i=0;i<5;i++){
         printf("%d\t",arr[i]);
     }
-}
+}*/
+// #include<stdio.h>
+// int main(){
+//     int arr[6] = {1,2,3,4,5,6};
+//     int count = 0;
+//     for(int i=0;i<7;i++){
+//         if(arr[i]%2!=0){
+//             count++;
+//         }
+//     }
+//     printf("%d\n",count);
+//     return 0;
+// }
+// #include<stdio.h>
+// int main(){
+//     int arr[5] = {1,2,3,4,5};
+//     for(int i=0;i<5/2;i++){
+//         int first_value = arr[i];
+//         int second_value = arr[5-i-1];
+//         arr[5-i-1] = first_value;
+//         arr[i] = second_value;
 
+//     }
+//     for(int i=0;i<5;i++){
+//         printf("%d\t",arr[i]);
+//     }
+//     printf("\n");
+// }
+// #include<stdio.h>
+// int main(){
+//     int arr[5] = {1,2,3,4,5};
+//     for(int i=4;i>=0;i--){
+//     }
+//     for(int i=4;i>=0;i--){
+//         printf("%d ",arr[i]);
+//     }
+//     return 0;
+// }
+// #include<stdio.h>
+// int main(){
+//     char s[100];
+//     char h[100];
+//     fgets(s,100,stdin);
+    
+//     fgets(h,100,stdin);
+//     printf("%s",s);
+//     printf("%s",h);
+//     return 0;
+// }
+// #include<stdio.h>
+// int main(){
+//     int n = 10;
+//     int a = 0;
+//     int b = 1;
+//     for(int i=2;i<n;i++){
+//         int c = a+b;
+//         a = b;
+//         b = c;
+//         printf("%d\t",c);
+//     }
+
+//     return 0;
+// }
+// #include<stdio.h>
+// int main(){
+//     int n = 10;
+//     int arr[n];
+//     int a = 0;
+//     int b = 1;
+
+//     for (int i=2;i<n;i++){
+//         int c = a+b;
+//         a = b;
+//         b = c;
+//         printf("%d\t",c);
+//     }
+//     return 0;
+// }
+// int main(){
+// fibo(6);
+// return 0;
+// }
+// #include<stdio.h>
+// int fibo(int n){
+//     if (n==0){
+//         return 0;
+//     }
+//     if (n==1){
+//         return 1;
+//     }
+//     int fiboNM1 = fibo(n-1);
+//     int fiboNM2 = fibo(n-2);
+//     int sum = fiboNM1 + fiboNM2;
+//     return sum;
+// }
+// int main(){
+//     printf("%d",fibo(6));
+//     return 0;
+// }
+// #include<stdio.h>
+// int main(){
+//     char ch[100];
+//     char s[100];
+//     char sen[100];
+//     fgets(ch,100,stdin);
+//     fgets(s,100,stdin);
+//     fgets(sen,100,stdin);
+//     printf("%s",ch);
+//     printf("%s",s);
+//     printf("%s",sen);
+
+// }
+// #include<stdio.h>
+// int main(){
+//     int a;
+//     int b;
+//     float c,d;
+//     scanf("%d",&a);
+//     scanf("%d",&b);
+//     scanf("%f",&c);
+//     scanf("%f",&d);
+
+//     printf("%d\n",a+b);
+//     printf("%.1f %.1f",c+d,c-d);
+//     return 0;
+// }
+// #include<stdio.h>
+// int main() {
+//     int a, b, c, d;
+//     scanf("%d %d %d %d", &a, &b, &c, &d);
+//     if(a>b && a>c && a>d){
+//         printf("%d",a);
+//     }
+//     else if(b>a && b>c && b>d){
+//         printf("%d",b);
+//     }
+//     else if(c>a && c>b && c>d){
+//         printf("%d",c);
+//     }
+//     else{
+//         printf("%d",d);
+//     }
+    
+//     return 0;
+// }
+// #include<stdio.h>
+// int max_of_four(int a,int b,int c,int d){
+//     if(a>b && a>c && a>d){
+//         printf("%d",a);
+//     }
+//     else if(b>a && b>c && b>d){
+//         printf("%d",b);
+//     }
+//     else if(c>a && c>b && c>d){
+//         printf("%d",c);
+//     }
+//     else{
+//         printf("%d",d);
+//     }
+// }
+// int main() {
+//     int a, b, c, d;
+//     scanf("%d %d %d %d", &a, &b, &c, &d);
+//     max_of_four(a, b, c, d);
+    
+//     return 0;
+// }
+// #include<stdio.h>
+// #include<stdlib.h>
+// void update(int *a,int *b) {
+//     // Complete this function  
+//     int add , sub;
+//     add = *a+*b;
+//     sub = abs(*a-*b);  
+//     *a = add;
+//     *b = sub;
+// }
+
+// int main() {
+//     int a, b;
+//     int *pa = &a, *pb = &b;
+    
+//     scanf("%d %d", &a, &b);
+//     update(pa, pb);
+//     printf("%d\n%d", a, b);
+
+//     return 0;
+// } 
+// #include<stdio.h>
+// int main(){
+//     int a = 10564;
+//     int sum = 0;
+//     for(int i=0;a>0;i++){
+//         sum = sum + i;
+//     }
+//     printf("%d",sum);
+//     return 0;
+// }
+// #include<stdio.h>
+// int main() {
+	
+//     int n,x;
+//     scanf("%d", &n);
+//     int sum = 0;
+//     while(n>0)
+//     {
+//     x = n%10;
+//     sum = sum + x;
+//     n = n/10;
+//     }
+    
+//     printf("%d",sum);
+
+//    // printf("%d",sum);
+
+//     return 0;
+
+// }
+// #include<stdio.h>
+// int main() {
+	
+//     int n,x;
+//     scanf("%d", &n);
+//     int sum = 0;
+//     while(n>0){
+//         x = n%10;
+//         sum = sum + x;
+//         n = n/10;
+//     }
+    
+//     printf("%d",sum);
+
+//    // printf("%d",sum);
+
+//     return 0;
+
+// }
+// #include<stdio.h>
+// int main(){
+//     int a = 2;
+//     int *ptr = &a;
+//     printf("%d\n",ptr);
+//     *ptr ++;
+//     printf("%d",ptr);
+//     return 0;
+// }
+/*#include<stdio.h>
+int main(){
+    int a=5;
+    int b=4;
+    printf("%d",a|b);
+}*/
+#include<stdio.h>
+int main(){
+    int a = 16;
+    printf("size of a :%d\n",sizeof(a));
+    printf("size of int :%d\n",sizeof(int));
+    printf("size of char :%d\n",sizeof(char));
+    printf("size of float :%d\n",sizeof(float));
+    printf("size of double :%d\n",sizeof(double));
+
+}
