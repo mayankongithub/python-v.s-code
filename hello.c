@@ -878,13 +878,137 @@ int main(){
     int b=4;
     printf("%d",a|b);
 }*/
+// #include<stdio.h>
+// int main(){
+//     int a = 16;
+//     printf("size of a :%d\n",sizeof(a));
+//     printf("size of int :%d\n",sizeof(int));
+//     printf("size of char :%d\n",sizeof(char));
+//     printf("size of float :%d\n",sizeof(float));
+//     printf("size of double :%d\n",sizeof(double));
+
+// }
+// #include<stdio.h>
+// int main(){
+//     int d;
+//     gets(d);
+//     //printf("%c",d);
+//     puts(d);
+
+// }
+/*
 #include<stdio.h>
 int main(){
-    int a = 16;
-    printf("size of a :%d\n",sizeof(a));
-    printf("size of int :%d\n",sizeof(int));
-    printf("size of char :%d\n",sizeof(char));
-    printf("size of float :%d\n",sizeof(float));
-    printf("size of double :%d\n",sizeof(double));
+    char a[100];
+    fgets(a,100,stdin);
+    printf("%s",a);
+}
+#include<stdio.h>
+
+int main(){
+    int n,k,and=0,or=0,xor=0;
+    scanf("%d %d",&n,&k);
+    for(int i=1;i<n;i++){
+        for(int j=i+1;j<=n;j++){
+            if((i&j)>and&&(i&j)<k){
+                and = i&j;
+            }
+            if((i|j)>or&&(i|j)<k){
+                or = i|j;
+            }
+            if((i^j)>xor&&(i^j)<k){
+                xor = i^j;    
+            }
+        }
+    }
+        printf("%d\n%d\n%d",and,or,xor);
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter a number n  : ");
+    for(int i=0;i<=n;i++){
+        for(int j=0;i<=n;j++){
+            printf("*");
+        }
+    }
+    printf("\n");
 
 }
+
+#include<stdio.h>
+int main(){
+    int a = 10<<2;
+    printf("%d",a);
+}
+#include<stdio.h>
+int main(){
+    int arr[6] = {1,2,3,4,5,6};
+    int n = 6;
+    for(int i=0;i<=n/2;i++){
+        int first_value = arr[i];
+        int second_value = arr[n-i-1];
+        arr[i] = second_value;
+        arr[n-i-1] = first_value;   
+    }
+    for(int i=0;i<n;i++){
+        printf("%d\t",arr[i]);
+    
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter a number n : ");
+    scanf("%d",&n);
+    int fibo[n];
+    fibo[0] = 0;
+    fibo[1] = 1;
+    for(int i=2;i<n;i++){
+        fibo[i] = fibo[i-1] + fibo[i-2];
+        printf("%d\t",fibo[i]);
+    }
+    printf("\n");
+    return 0;
+}
+// #include<stdio.h>
+// int main(){
+//     int n,m;
+//     scanf("%d %d",&n,&m);
+//     int tables_store[n][m];
+//     for(int i=0;i<=m;i++){
+//         tables_store[n][m] = 2 * (i+1);
+//         printf("%d\n",tables_store);
+
+//     }
+//     return 0;
+// }
+#include<stdio.h>
+int main(){
+    int a = 20>> 3;
+    printf("%d",a);
+}*/
+ #include<stdio.h>
+ int max_of_four(int a,int b,int c,int d){
+     if(a>b && a>c && a>d){
+         printf("%d",a);
+     }
+     else if(b>a && b>c && b>d){
+         printf("%d",b);
+     }
+     else if(c>a && c>b && c>d){
+         printf("%d",c);
+     }
+     else{
+         printf("%d",d);
+     }
+ }
+ int main() {
+    int a, b, c, d;
+     scanf("%d %d %d %d", &a, &b, &c, &d);
+     max_of_four(a, b, c, d);
+    
+     return 0;
+ }
+
