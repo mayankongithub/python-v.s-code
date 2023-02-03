@@ -988,7 +988,7 @@ int main(){
 int main(){
     int a = 20>> 3;
     printf("%d",a);
-}*/
+}
  #include<stdio.h>
  int max_of_four(int a,int b,int c,int d){
      if(a>b && a>c && a>d){
@@ -1011,4 +1011,623 @@ int main(){
     
      return 0;
  }
+#include<stdio.h>
+int main(){
+    int a=2,b=3,c=4,d;
+    d = a+b-(c*a);
+    printf("%d",d);
+}
+#include<stdio.h>
+int main(){
+    int a ;
+    printf("Enter a : ");
+    scanf("%d",&a);
+    if(a>0){
+        printf("a is positive");
+    }
+    else if(a==0){
+        printf("zero");
+    }
+    else if(a<0){
+        printf("a is negative");
+    
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n = 12345;
+    int sum = 0;
+    while (n>0) {
+        int a = n%10;
+        sum = sum + a;
+        n = n/10;
+    }
+    
+    printf("%d",sum);
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    if(n%5==0){
+        printf("n is divisible by 5"); 
+    }
+    else if(n%11==0){
+        printf("n is divisible by 11");
+    }
+    else{
+        printf("n is not divisible either by 5 ");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int a = 10;
+    int b = 2;
+    int c = 3;
+    if(a>b && a>c){
+        printf("a is greater");
+    }
+    else if(b>a && b>c){
+        printf("b is greater");
+    }
+    else{
+        printf("c is greater");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int a,b;
+    printf("Enter a  : ");
+    scanf("%d",&a);
+    if(a==100){
+        if(a<150){
+            printf("a is smaller then 150\n");
 
+        }
+        if(a<120){
+            printf("a is smaller then 120");
+        }
+    }
+   
+    else{
+        printf("a is not present");
+    }
+    return 0;
+}
+#include<stdio.h >  
+  
+int main(){ 
+    int num, start, rem, sum; 
+    int upto;
+    printf("Enter start : ");
+    scanf("%d",&start);
+    printf("Enter upto : ");
+    scanf("%d",&upto); 
+  
+    while(start <= upto){ 
+        num = start;  
+        sum = 0;  
+  
+        while(num){ 
+            rem = num % 10;  
+            sum = sum + (rem * rem * rem);  
+            num = num / 10;  
+        }  
+  
+        if(start == sum){  
+            printf("%d is a Armstrong number\n", start);  
+        }  
+  
+        start++;
+    }
+}
+#include<stdio.h>
+int main(){
+    char op;
+    printf("Enter a operator : ");
+    scanf("%c",&op);
+    int a,b;
+    printf("Enter a : ");
+    scanf("%d",&a);
+    printf("Enter b : ");
+    scanf("%d",&b);
+    switch(op){
+        case '+' : printf("%d",a+b);
+                   break;
+        case '-' : printf("%d",a-b);
+                   break;
+        case '*' : printf("%d",a*b);
+                   break;
+        case '/' : printf("%d",a/b);
+                   break;
+        default : printf("Enter a valid operator");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf(" %d",&n);
+    switch(n){
+        case 0 : printf("Zero");
+                   break;
+        case 1 : printf("One");
+                   break;
+        case 2 : printf("Two");
+                   break;
+        case 3 : printf("Three");
+                   break;
+        case 4 : printf("Four");
+                   break;
+        case 5 : printf("Five");
+                   break;
+        case 6 : printf("Six");
+                   break;
+        case 7 : printf("Seven");
+                   break;
+        case 8 : printf("Eight");
+                   break;
+        case 9 : printf("Nine");
+                   break;
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int fact=1,n=5;
+    for(int i=1;i<=5;i++){
+        fact = fact*i;
+    }
+    printf("%d",fact);
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    char a[100];
+    fgets(a,100,stdin);
+    printf("%s",a);
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    char b[1];
+    gets(b);
+    printf("%s",b);
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    for(int i=0;i<=10;i++){
+        printf("Mayank Sharma\n");
+    }
+}
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=10;i++){
+        printf("%d\n",i);
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    for (int i=1;i<=10;i++){
+        printf("%d\n",i);
+        if(i==6){
+            printf("Mayank Sharma\n");
+        }
+    }
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n :");
+    scanf("%d",&n);
+    for(int i=1;i<=10;i++){
+        printf("%d\n",n*i);
+    }
+}
+#include<stdio.h>
+void main()
+{
+    int a[5] = {5, 1, 15, 20, 25};
+    int i, j, m;
+    i = ++a[1];
+    j = a[1]++;
+    m = a[i++];
+    printf("%d, %d, %d", i, j, m);
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n :");
+    scanf("%d",&n);
+    for(int i=1;i<=10;i++){
+        printf("%d\n",n*i);
+    }
+}
+
+printf("%d X %d = %d \n",num,i,num*i);
+#include<stdio.h>
+int swap(int *a,int *b){
+    int t = *a;
+    *a = *b;
+    *b = t;
+    //printf("%d %d",a,b);
+}
+int main(){
+    int a = 2;
+    int b = 4;
+    swap(&a,&b);
+    printf("%d %d",a,b);
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[5] = {1,1,1,1,1};
+    int sum = 0;
+    for(int i=1;i<5;i++){
+        sum = sum + arr[i];
+    }
+    printf("%d",sum);
+
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr1;
+    int arr2;
+    for(int i=0;i<=5;i++){
+        for(j)
+    }
+}
+
+#include<stdio.h>
+void add(int a,int b);
+int main(){
+    int a =0 ;
+    int b = 9;
+    add(a,b);
+}
+void add(int a,int b){
+    printf("%d",a+b);
+}
+#include<stdio.h>
+int main(){
+    int a = 5;
+    printf("Enter a : ");
+    scanf("%d",&a);
+    for(int i=1;i<=10;i++){
+        printf("%d X %d = %d\n",a,i,a*i);
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    char a[100]; 
+    fgets(a,100,stdin);
+    printf("%s",a);
+}
+#include<stdio.h>
+int main(){
+    char a=1;
+    printf("%d",a>>2);
+    return 0;
+}
+
+#include<stdio.h>
+int main(){
+     char ch[100];
+     char s[100];
+     char sen[100];
+     fgets(ch,100,stdin);
+     fgets(s,100,stdin);
+     fgets(sen,100,stdin);
+     printf("%s",ch);
+     printf("%s",s);
+     printf("%s",sen);
+
+}
+#include<stdio.h>
+int main(){
+    int n = 4;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        for(int j=0;j<=i;j++){
+            printf("#");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    for(int i=n;i>0;--i){
+        for(int j=0;j<i;j++){
+            printf("$");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n = 5;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<=i;j++){
+            printf("#");
+        }
+        printf("\n");
+    }
+    for(int i=n-1;i>0;--i){
+        for(int j=0;j<i;j++){
+            printf("#");
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n = 5;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            printf("%d",i);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n = 5;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            printf("%d",i);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n = 5;
+    for(int i=1;i<=n;i++){
+        for(int j=n;j>0;--j){
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        for(int j=n;j>0;--j){
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+CHECK
+#include<stdio.h>
+int main(){
+    int n = 5;
+    for(int i=n;i>0;--i){
+        for(int j=1;j<=i;j++){
+            printf(" ");
+        }
+        printf("\n");
+    }
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            printf("#");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n = 5;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            printf("*");
+        }
+        printf("\n");
+    } 
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n = 4;
+    for(int i=n;i>0;--i){
+        for(int j=1;j<=i;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n = 4;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n = 4;
+    for(int i=n;i>0;--i){
+        for(int j=1;j<=i;j++){
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n = 4;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n=5;
+    int i=1;
+    while (i<=n){
+        printf("%d\n",i);
+        i++;
+
+    }
+
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n = 5;
+    int i = 1;
+    do{
+        printf("%d\n",i);
+        i++;
+    }
+    while (i<=n);
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n = 5;
+    int i = 1;
+    do{
+        printf("%d X %d = %d\n",n,i,n*i);
+        i++;
+    }
+    while(i<=10);
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter a number n : ");
+    scanf("%d",&n);
+    if(n<0){
+        printf("n is smaller then 0");
+    }
+    else if(n>=0 && n<=10){
+        printf("n lies in range[0-10]");
+    }
+    else if(n>10 && n<=20){
+        printf("n lies in range[11-20]");
+    }
+    else if(n>20 && n<=30){
+        printf("n lies in range[21-30]");
+    }
+    else if(n>30 && n<=40){
+        printf("n lies in range[31-40]");
+    }
+    else if(n>31 && n<=50){
+        printf("n lies in range[41-50]");
+    }
+    else{
+        printf("number not lies in range[1-50]");
+    }
+    if(n%2==0){
+        printf("\nn is even");
+    }
+    else{
+        printf("\nn is odd");
+    }
+}*/
+
+#include<stdio.h>
+#include<stdlib.h>
+int main() {
+  char ch;
+  
+  //printf("Enter the character to get the ASCII value: \n");
+  //scanf("%c", &ch);
+  while (2>1){
+    printf("Enter the character to get the ASCII value: \n");
+    scanf("%c", &ch);
+    printf("ASCII value of %c is %d\n", ch,ch);
+    //printf("Enter a character");
+    //scanf("%c",&ch);
+  }
+ 
+  return 0;
+}
