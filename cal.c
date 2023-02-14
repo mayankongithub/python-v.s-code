@@ -1,4 +1,4 @@
-/*#include<stdio.h>
+#include<stdio.h>
 #include<math.h>
 int main(){
     int a,b; 
@@ -26,7 +26,7 @@ int main(){
         default :  printf("enter a valid operator");
     }
 }
-#include<stdio.h>
+/*#include<stdio.h>
 #include<math.h>
 int main(){
     int maths,physics,chemistry,hindi,biology;
@@ -54,18 +54,18 @@ int main(){
     printf("%f\n",divide);
     printf("%f",mul);
 }*/
-#include <stdio.h>
-int main() {
-  char ch;
+// #include <stdio.h>
+// int main() {
+//   char ch;
   
 
-  while (2>1){
-    printf("Enter the character : ");
-    scanf("%c\n", &ch);
-    printf("ASCII value is %d\n",ch);
+//   while (2>1){
+//     printf("Enter the character : ");
+//     scanf("%c\n", &ch);
+//     printf("ASCII value is %d\n",ch);
   
 
-  }
+//   }
   
-  return 0;
-}
+//   return 0;
+// }

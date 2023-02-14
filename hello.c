@@ -1612,7 +1612,7 @@ int main(){
     else{
         printf("\nn is odd");
     }
-}*/
+}
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -1631,3 +1631,1113 @@ int main() {
  
   return 0;
 }
+#include<stdio.h>
+int main(){
+    char name;
+    printf("Enter a name of student : ");
+    scanf("%s",&name);
+    printf("%s",name);
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n = 5;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+#include<stdio.h>
+int main(){
+    int n = 5;
+    for(int i=n;i>0;--i){
+        for(int j=1;j<=i;j++){
+            printf("*");
+        } 
+        printf("\n");
+    }
+}
+
+#include<stdio.h>
+int main(){
+    int n = 5;
+    for(int i=1;i<=n;i++){
+        for(int j=n;j>=1;--j){
+            printf("*");
+            printf("\n");
+        }
+        printf("\n");
+    }
+}
+#include<stdio.h>
+int main(){
+    int n = 5;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+}
+#include<stdio.h>
+int main(){
+    int n = 5;
+    for(int i=n;i>0;--i){
+        for(int j=1;j<=i;j++){
+            printf("*");
+        } 
+        printf("\n");
+    }
+}
+#include<stdio.h>
+int main(){
+    int number = 1;
+    repeat:
+    printf("%d\n",number);
+    number++;
+
+    if(number<=10)
+    goto repeat;
+}
+#include<stdio.h>
+int main(){
+    int number;
+    printf("Enter a number : ");
+    scanf("%d",&number);
+    if(number<=0)
+        goto end;
+    printf("Number is : %d",number);
+
+    end:
+        printf("\nless then 0");
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int sum = 0;
+    int number = 12345;
+    int n = number;
+   
+    while(number>0){
+        int d = number%10;
+        sum = sum*10+d;
+        number = number/10;
+
+    }
+    printf("%d",sum);
+
+
+}
+#include<stdio.h>
+int main(){
+    int n = 5;
+    for(int i=1;i<=n;i++)
+    {
+        for(int j=1;j<=n-i;j++)
+        {
+            printf(" ");
+        }
+        for(int k=1;k<=i;k++)
+        {
+            printf("*");
+        }
+        printf("\n");
+
+    }
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n-i;j++){
+            printf(" ");
+        }
+        for(int k=1;k<=2*i-1;k++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n-i;j++){
+            printf(" ");
+        }
+        for(int k=1;k<=2*i-1;k++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(int i=n-1;i>=0;--i){
+        for(int j=1;j<=n-i;j++){
+            printf(" ");
+        }
+        for(int k=1;k<=2*i-1;k++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n = 5;
+    printf("%c",n);
+}
+#include<stdio.h>
+int main(){
+    int arr[5] = {1,2,3,4,5};
+    printf("%d",arr[4]);
+}
+#include<stdio.h>
+int main(){
+    int arr[5];
+    for(int i=0;i<5;i++){
+        printf("Enter the element number %d : ",i+1);
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<5;i++){
+        printf("%d ",arr[i]);
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[5];
+    for(int i=0;i<5;i++){
+        printf("Enter the element number %d : ",i+1);
+        scanf("%d",&arr[i]);
+    }
+    for(int i=4;i>=0;i--){
+        printf("%d ",arr[i]);
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[10];
+    for(int i=0;i<10;i++){
+        printf("Enter element number %d : ",i+1);
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<10;i++){
+        if(arr[i]<35){
+            printf("%d\n",i);
+        }
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[3] = {1,2,3};
+    arr[0] = 1;
+    arr[1] = 2;
+    arr[2] = 3;
+    printf("%d",&arr[2]);
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        int a = 1;
+        for(int j=1;j<=n-i;j++){
+            printf(" ");
+        }
+        for(int k=1;k<=2*i-1;k++){
+            printf("%c",(char)a+64);
+            a++;
+        }
+        printf("\n");
+    }
+    for(int i=n-1;i>0;--i){
+        int a = 1;
+        for(int j=1;j<=n-i;j++){
+            printf(" ");
+        }
+        for(int k=1;k<=2*i-1;k++){
+            printf("%c",(char)a+64);
+            a++;
+        }
+        printf("\n");
+    }
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    int arr[n];
+    
+    for(int i=0;i<n;i++){
+        printf("Enter element of index %d : ",i+1);
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<n;i++){
+        printf("%d",arr[i]);
+    }
+    int sum = 0;
+    for(int i=0;i<n;i++){
+        sum = sum + arr[i];
+    }
+    printf("\n%d",sum);
+    return 0;
+}
+#include<stdio.h>
+int fun(){
+    static int count = 0;
+    //count++;
+    count = count + 1;
+    return count;
+}
+int main(){
+    int count = 0;
+    printf("%d\n",fun());
+    printf("%d",fun());
+    return 0;
+}
+#include<stdio.h>
+int g = 20;
+int main(){
+    g = 10;
+    printf("%d",g);
+}
+#include<stdio.h>
+int main(){
+    int arr[5] = {1,2,3,4,5};
+    int product = 1;
+    for(int i=1;i<=5;i++){
+        product = product * i;
+    }
+    printf("%d",product);    
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        printf("Enter element at %d place : ",i+1);
+        scanf("%d",&arr[i]);
+    }
+    int greater = arr[0];
+    for(int i=0;i<n;i++){
+        if(greater<arr[i]){
+            greater = arr[i];
+        }
+    }
+    printf("%d",greater);
+
+
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        printf("Enter element at %d place : ",i+1);
+        scanf("%d",&arr[i]);
+    }
+    int greater = arr[0];
+    for(int i=0;i<n;i++){
+        if(greater>arr[i]){
+            greater = arr[i];
+        }
+    }
+    printf("%d",greater);
+
+
+}
+#include<stdio.h>
+int main(){
+    int arr[5] = {1,2,3,4,5};
+    for(int i=0;i<5;i++){
+        if(i%2!=0){
+            printf("%d ",arr[i]*2);
+        }
+        else{
+            printf("\n%d",arr[i]+10);
+        }
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[5] = {1,2,3,4,5};
+    int n = 2;
+    int count = 0;
+    for(int i=0;i<5;i++){
+        if(arr[i]>n){
+            count++;
+        }    
+    }
+    printf("%d",count);
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        printf("Enter element at %d : ",i+1);
+        scanf("%d",&arr[i]); 
+    }
+    int sum = 12;
+    int total_pair = 0;
+    for(int i=0;i<=n;i++){
+        for(int j=i+1;j<=n;j++){
+            if(arr[i]+arr[j]==12){
+                total_pair++;
+            }
+        }
+    }
+    printf("%d",total_pair);
+}
+#include<stdio.h>
+int main(){
+    int arr[8] = {1,2,3,4,5,6,7,8};
+    int n = 12;
+    int count = 0;
+    for(int i=0;i<8;i++){
+        for(int j=i+1;j<=7;j++){
+            for(int k=j+1;k<=7;k++){
+                if(arr[i]+arr[j]+arr[k]==12){
+                    count++;
+                }
+            }
+        }
+    }
+    printf("%d",count);
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        printf("Enter element at %d : ",i+1);
+        scanf("%d",&arr[i]);
+    }
+
+    int max = arr[0];
+    int second_max = arr[0];
+    for(int i=0;i<n;i++){
+        if(max<arr[i]){
+            max = arr[i];
+        }
+    }
+     for(int i=0;i<n;i++){
+        if(arr[i]!=max && second_max<arr[i]){
+            second_max = arr[i];
+        }
+    }
+    printf("%d\n",max);
+    printf("%d",second_max);
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[8] = {17,24,33,42,15,36,17,58};
+    int max = arr[0],second_max;
+    for(int i=0;i<8;i++){
+        if(max<arr[i]){
+            second_max = max;
+            max = arr[i];
+        }
+    }
+    printf("%d\n",max);
+    printf("%d",second_max);
+    return 0;
+}
+#include<stdio.h>
+#include<limits.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        printf("Enter element at %d place : ",i+1);
+        scanf("%d",&arr[i]);
+    }
+    int max = INT_MIN;
+    int second_max = INT_MIN;
+    for(int i=0;i<n;i++){
+        if(max<arr[i]){
+            max = arr[i];
+        }
+    }
+    for(int i=0;i<n;i++){
+        if(arr[i]!=max && second_max<arr[i]){
+            second_max = arr[i];
+        }
+    }
+    printf("%d\n",max);
+    printf("%d",second_max);
+}
+#include<stdio.h>
+int main(){
+    int arr[5] = {1,2,3,4,5};
+    int new_arr[5];
+    for(int i=0;i<5;i++){
+        new_arr[i] = arr[i];
+    }
+    for(int i=4;i>=0;--i){
+        printf("%d",new_arr[i]);
+    }
+}
+#include<stdio.h>
+int main(){
+    int arr[5] = {1,2,3,4,5};
+    for(int i=4;i>=0;i--){
+        printf("%d",arr[i]);
+    }
+}
+#include<stdio.h>
+int main(){
+    int a = 2;
+    int b = 4;
+    int temp = a;
+    a = b;
+    b = temp;
+    printf("a = %d \nb = %d",a,b);
+}
+#include<stdio.h>
+void reverse(int n,int arr[]){
+    int i = 0;
+    int j = n-1;
+    while(i<j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        i++;
+        j--;
+    }
+}
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        printf("Enter element at %d place : ",i+1);
+        scanf("%d",&arr[i]);
+    }
+    reverse(n,arr);
+    for(int i=0;i<n;i++){
+        printf("%d",arr[i]);
+    }
+}
+#include<stdio.h>
+int main(){
+    int arr[5] = {1,2,3,2,1};
+    int j = 4;
+    for(int i=0;i<5;i++){
+        if(arr[i] == arr[j]){
+
+        }
+    }
+    printf("Palindorme");
+
+    
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[5] = {1,2,3,4,5};
+    int i = 0;
+    int j = 4;
+    int k = 3;
+    int temp;
+    while(i<j){
+        i = j;
+        j = k;
+        k = temp;
+    }
+    for(int i=0;i<5;i++){
+        printf("%d",arr[i]);    
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+    int i = 4;
+    int j = 9;
+    while(i<j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        i++;
+        j--;
+    }
+    for(int i=0;i<10;i++){
+        printf("%d",arr[i]);
+    }
+}
+#include<stdio.h>
+#include<limits.h>
+int main(){
+    int n;
+    int max = INT_MIN,second_max = INT_MIN;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        printf("Enter the element at %d place : ",i+1);
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<n;i++){
+        if(max<arr[i]){
+            max = arr[i];
+        }
+    }
+    for(int i=0;i<n;i++){
+        if(arr[i]!=max && second_max<arr[i]){
+            second_max = arr[i];
+        }
+    }
+    printf("%d\n",max);
+    printf("%d",second_max);
+    return 0;
+}
+#include<stdio.h>
+void reverse(int n,int arr[]){
+    int i = 0;
+    int j = n-1;
+    while(i<j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        i++;
+        j--;
+    }
+}
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        printf("Enter the element at %d place : ",i+1);
+        scanf("%d",&arr[i]);
+    }
+    reverse(n,arr);
+    for(int i=0;i<n;i++){
+        printf("%d",arr[i]);
+    }
+    return 0;
+}
+#include<conio.h>
+int main(){
+    int a = 3;
+    int b = 3;
+    printf("%d",a+b);
+}
+#include<stdio.h>
+int main(){
+    char s[100] = "Mayank sharma";
+    printf("%s",s);
+}
+#include<stdio.h>
+int main(){
+    int n = 5;
+    for(int i=1;i<=n;i++){
+        int a = 1;
+        for(int j=1;j<=n-i;j++){
+            printf(" ");
+        }
+        for(int k=1;k<=2*i-1;k++){
+            printf("%c",(char)a+64);
+            a++;
+        }
+        printf("\n");
+    }
+    for(int i=n-1;i>0;--i){
+        int a = 1;
+        for(int j=1;j<=n-i;j++){
+            printf(" ");
+        }
+        for(int k=1;k<=2*i-1;k++){
+            printf("%c",(char)a+64);
+            a++;
+        }
+        printf("\n");
+    }
+    
+}
+#include<stdio.h>
+void reverse(int arr[],int a,int b){
+    for(int i=a,j=b;i<j;i++,j--){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+}
+int main(){
+    int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+    reverse(arr,4,9);
+    for(int i=0;i<10;i++){
+        printf("%d",arr[i]);
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[5] = {1,2,3,4,5};
+    int i = 2, j= 4;
+    while(i<j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        i++;
+        j--;
+    }
+    for(int i=0;i<5;i++){
+        printf("%d",arr[i]);
+    }
+    return 0;
+}
+#include<stdio.h>
+void reverse(int a,int b,int arr[]){
+    int i = 2;
+    int j = 4;
+    while(i<j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        i++;
+        j--;
+    }
+}
+int main(){
+    int arr[5] = {1,2,3,4,5};
+    int i = 2;
+    int j = 4;
+    reverse(i=2,j=4,arr);
+    for(int i=0;i<5;i++){
+        printf("%d",arr[i]);
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[2][3];
+    for(int i=0;i<2;i++){
+        for(int j=0;j<3;j++){
+            printf("Enter the element : ");
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    for(int i=0;i<2;i++){
+        for(int j=0;j<3;j++){
+            printf("%d",arr[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[2][2] = {{1,2},{3,4}};
+    int arr2[2][2] = {{1,2},{3,4}};
+    int result[2][2];
+    for(int i=0;i<2;i++){
+        for(int j=0;j<2;j++){
+            printf("%d",result[i][j] = arr[i][j]+arr2[i][j]);
+        }
+        printf("\n");
+    }
+
+  //  for(int i=0;i<2;i++){
+    //    for(int j=0;j<2;j++){
+      //      printf("%d ",result[i][j]);
+        //}
+        //printf("\n");
+    //}
+    
+}
+#include<stdio.h>
+int main(){
+    int r,c;
+    printf("Enter r : ");
+    scanf("%d",&r);
+    printf("Enter c : ");
+    scanf("%d",&c);
+    int arr[r][c];
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            printf("Enter all the elments : ");
+            scanf("%d",&arr[i][j]);
+        }
+        printf("\n");
+    }
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            printf("%d ",arr[i][j]);
+        }
+        printf("\n");
+    }
+    int sum = 0;
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            sum +=arr[i][j];
+        }
+    }
+    printf("\n%d",sum);
+}
+#include<stdio.h>
+int main(){
+    int r,c;
+    printf("Enter r : ");
+    scanf("%d",&r);
+    printf("Enter c : ");
+    scanf("%d",&c);
+    int arr[r][c];
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            printf("Enter all the elments : ");
+            scanf("%d",&arr[i][j]);
+        }
+        printf("\n");
+    }
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            printf("%d ",arr[i][j]);
+        }
+        printf("\n");
+    }
+    int max = 0;
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            if(max<arr[i][j]){
+                max = arr[i][j];
+            }
+        }
+    }
+    printf("\n%d",max);
+}
+#include<stdio.h>
+int main(){
+    int arr[2][2] = {{1,2},{3,4}};
+    int max = 0;
+    for(int i=0;i<2;i++){
+        int sum = 0;
+        for(int j=0;j<2;j++){
+            sum += arr[i][j];
+            if (max<sum){
+                max = sum;
+            }
+        }
+    }
+    printf("%d",max);
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[3][4] = {{1,1,0,1},{0,1,0,0},{1,1,1,1}};
+    int max = 0;
+    int max_index = 0;
+    for(int i=0;i<3;i++){
+        int count = 0;
+        for(int j=0;j<4;j++){
+            if(arr[i][j] == 1) count++;
+        }
+        if(max<count){
+            max = count;
+            max_index = i;
+        }
+    }
+    printf("%d\n",max);
+    printf("%d",max_index);
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[2][2] = {{1,2},{3,4}};
+    int max = 0;
+    int max_index = 0;
+    for(int i=0;i<2;i++){
+        int sum = 0;
+        for(int j=0;j<2;j++){
+            sum += arr[i][j];
+        }
+        if(max<sum){
+            max = sum;
+            max_index = i;
+        }
+    }
+    printf("Maximum sum is : %d",max);
+    printf("\nIndex having maximum sum is : %d",max_index);
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[2][3] = {{1,2,3},{4,5,6}};
+    for(int i=0;i<3;i++){
+        for(int j=0;j<2;j++){
+            printf("%d ",arr[j][i]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            arr[i][j] = arr[j][i];
+        }
+    }
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            printf("%d ",arr[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[2][2] = {{1,2},{3,4}};
+    int arr2[2][2] = {{5,6},{7,8}};
+    int result[2][2];
+    for(int i=0;i<2;i++){
+        for(int j=0;j<2;j++){
+            result[i][j] = arr[i][j] + arr2[i][j];
+        }
+    }
+    for(int i=0;i<2;i++){
+        for(int j=0;j<2;j++){
+            printf("%d ",result[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    int arr[n][n];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            printf("Enter the elments : ");
+            scanf("%d",&arr[i][j]);
+        }
+        printf("\n");
+    }
+    for(int i=0;i<n;i++){
+        for(int j=i;j<n;j++){
+            int temp = arr[i][j];
+            arr[i][j] = arr[j][i];
+            arr[j][i] = temp;
+        }
+    }
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            printf("%d ",arr[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int m,n;
+    printf("Enter m : ");
+    scanf("%d",&m);
+    printf("Enter n : ");
+    scanf("%d",&n);
+    int arr[m][n];
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            printf("Enter the elments : ");
+            scanf("%d",&arr[i][j]);
+        }
+        printf("\n");
+    }
+    int brr[n][m];
+
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            brr[i][j] = arr[j][i];
+        }
+        printf("\n");
+    }
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            printf("%d ",brr[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int arr[2][3] = {{1,2,3},{4,5,6}};
+    int result[3][2];
+    for(int i=0;i<3;i++){
+        for(int j=0;j<2;j++){
+            result[i][j] = arr[j][i];
+        }
+    }
+    for(int i=0;i<3;i++){
+        for(int j=0;j<2;j++){
+            printf("%d ",result[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    int arr[n][n];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            printf("Enter element at index [%d][%d]: ",i,j);
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    for(int i=0;i<3;i++){
+        for(int j=i;j<3;j++){
+            int temp = arr[i][j];
+            arr[i][j] = arr[j][i];
+            arr[j][i] = temp;
+        }
+    }
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            printf("%d ",arr[i][j]);
+        }
+        printf("\n");
+
+    }
+    return 0;
+}
+#include<stdio.h>
+#include<limits.h>
+int main(){
+    int r,c;
+    printf("Enter r and c : ");
+    scanf("%d %d",&r,&c);
+    int arr[r][c];
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            printf("Enter element at index[%d][%d] : ",i,j);
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    int sum = 0;
+    int max = INT_MIN;
+    int max_index = INT_MIN;
+    for(int i=0;i<3;i++){
+        sum = 0;
+        for(int j=0;j<2;j++){
+            sum += arr[i][j];
+            if(max<sum){
+                max = sum;
+                max_index = i;
+            }
+        }
+    }
+    printf("%d\n",max);
+    printf("%d",max_index);
+}
+#include<stdio.h>
+int main(){
+    int r,c;
+    printf("Enter r and c : ");
+    scanf("%d %d",&r,&c);
+    int arr[r][c];
+    int max = 0;
+    int max_index = 0;
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            printf("Enter element at index[%d][%d] : ",i,j);
+            scanf("%d",&arr[i][j]);
+        }
+    }
+
+    for(int i=0;i<3;i++){
+        int count = 0;
+        for(int j=0;j<3;j++){
+            if(arr[i][j]==1){
+                count++;
+            }
+            if(max<count){
+                max = count;
+                max_index = i;
+            }
+        }
+    
+    }
+    printf("%d\n",max);
+    printf("%d",max_index);
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter n : ");
+    scanf("%d",&n);
+    int arr[n][n];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            printf("Enter element of index[%d][%d] : ",i,j);
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    for(int i=0;i<n;i++){
+        for(int j=i;j<n;j++){
+            int temp = arr[i][j];
+            arr[i][j] = arr[j][i];
+            arr[j][i] = temp;
+        }
+    }
+    //rotate
+    for(int i=0;i<n;i++){
+        int j = 0;
+        int k = n-1;
+        while(j<k){
+            int temp = arr[i][j];
+            arr[i][j] = arr[i][k];
+            arr[i][k] = temp;
+            j++;
+            k--;
+        }
+    }
+    //printing
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            printf("%d",arr[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}*/
+
+
